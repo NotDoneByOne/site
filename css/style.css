@@ -634,3 +634,131 @@ section {
         margin: 10px 0;
     }
 }
+
+.project-status-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.status-icon-development {
+    background-color: #FFA500;
+    color: #000;
+}
+
+.status-icon-planned {
+    background-color: #808080;
+    color: #fff;
+}
+
+.status-icon-released {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Индикаторы типа проекта */
+.project-type {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.type-opensource {
+    background-color: #28a745; /* Зеленый для open-source */
+    color: white;
+}
+
+.type-closed {
+    background-color: #6c757d; /* Серый для closed-source */
+    color: white;
+}
+
+/* Обновленные стили для статуса (переносим вправо) */
+.project-status {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Стили для модального окна */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: var(--dark);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    border: 2px solid var(--red);
+    position: relative;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-content {
+    transform: translateY(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--white);
+    transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+    color: var(--red);
+}
+
+.modal-title {
+    color: var(--red);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.modal-text {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}

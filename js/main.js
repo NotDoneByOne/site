@@ -119,3 +119,15 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', animateProjects);
     animateProjects(); // Check on load
 });
+
+document.querySelectorAll('.project-details').forEach(button => {
+    button.addEventListener('click', function(e) {
+        const projectType = this.getAttribute('data-project-type');
+        
+        if (projectType === 'closed') {
+            e.preventDefault();
+            alert('Извините, этот проект имеет закрытый исходный код и недоступен для публичного просмотра.');
+        }
+        // Для open-source переход произойдет автоматически
+    });
+});

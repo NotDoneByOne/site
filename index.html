@@ -19,7 +19,6 @@
     <header class="header">
         <div class="container">
             <div class="logo-container">
-                <img src="images/logo.png" alt="BWlabs Logo" class="logo">
                 <span class="logo-text">BWlabs</span>
             </div>
             <nav class="nav">
@@ -69,7 +68,7 @@
                             <img src="images/founders/founder1.jpg" alt="1" class="founder-img">
                             <div class="founder-overlay">
                                 <div class="founder-social">
-                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/n3xxxt"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +92,7 @@
                     
                     <div class="founder-card">
                         <div class="founder-img-container">
-                            <img src="images/founders/founder2.jpg" alt="3" class="founder-img">
+                            <img src="images/founders/founder3.jpg" alt="3" class="founder-img">
                             <div class="founder-overlay">
                                 <div class="founder-social">
                                     <a href="#"><i class="fab fa-github"></i></a>
@@ -114,10 +113,12 @@
                     <!-- Проект 1 -->
                     <div class="project-card">
                         <div class="project-img-container">
-                            <img src="images/projects/project1.jpg" alt="Проект 1" class="project-img">
-                            <div class="project-overlay">
-                                <a href="#" class="btn btn-outline">Подробнее</a>
-                            </div>
+                            <img src="images/projects/project1.jpg" alt="Проект 1" class="project-img">						
+							<span class="project-type type-opensource">Open-Source</span>
+							<div class="project-status-icon status-icon-released" title="Релиз">R</div>
+							<div class="project-overlay">
+								<a href="https://github.com/BugWarningVSU/VSU_AMM_bot" class="btn btn-outline project-details" data-project-type="opensource">Подробнее</a>
+							</div>
                         </div>
                         <h3 class="project-name">FreshmanAMM</h3>
                         <p class="project-description">Telegram-BOT для помощи студентам факультета ПММ ВГУ.</p>
@@ -130,13 +131,15 @@
                     <!-- Проект 2 -->
                     <div class="project-card">
                         <div class="project-img-container">
-                            <img src="images/projects/project2.jpg" alt="Проект 2" class="project-img">
+                            <img src="images/projects/project2.png" alt="Проект 2" class="project-img">
+							<span class="project-type type-closed">Closed</span>
+							<div class="project-status-icon status-icon-development" title="В работе">D</div>
                             <div class="project-overlay">
-                                <a href="#" class="btn btn-outline">Подробнее</a>
-                            </div>
+								<a href="#" class="btn btn-outline project-details" data-project-type="closed">Подробнее</a>
+							</div>
                         </div>
                         <h3 class="project-name">ShotSCOPE</h3>
-                        <p class="project-description">цифровая платформа для стрелкового спорта, помогающая спортсменам и тренерам анализировать результаты, планировать тренировки и отслеживать прогресс.</p>
+                        <p class="project-description">Цифровая платформа для стрелкового спорта, помогающая спортсменам и тренерам анализировать результаты, планировать тренировки и отслеживать прогресс.</p>
                         <div class="project-tech">
                             <span>Flutter</span>
                             <span>PostgreSQL</span>
@@ -156,25 +159,11 @@
                     <div class="contact-info">
                         <h3 class="contact-subtitle">Наши соцсети</h3>
                         <div class="social-links">
-                            <a href="#" class="social-link"><i class="fab fa-github"></i> GitHub</a>
-                            <a href="#" class="social-link"><i class="fab fa-telegram"></i> Telegram</a>
+                            <a href="https://github.com/BugWarningVSU" class="social-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://t.me/bugwarning" class="social-link"><i class="fab fa-telegram"></i> Telegram</a>
                         </div>
                         <h3 class="contact-subtitle">Email</h3>
-                        <a href="mailto:contact@bwlabs.dev" class="email-link">BWlabs@yandex.ru</a>
-                    </div>
-                    <div class="contact-form">
-                        <form>
-                            <div class="form-group">
-                                <input type="text" placeholder="Ваше имя" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" placeholder="Ваш email" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-red">Отправить</button>
-                        </form>
+                        <a href="mailto:BWlabs@yandex.ru" class="email-link">BWlabs@yandex.ru</a>
                     </div>
                 </div>
             </div>
@@ -202,5 +191,7 @@
     </footer>
 
     <script src="js/main.js"></script>
+	
+</div>
 </body>
 </html>
