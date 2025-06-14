@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshmanAMM - Помощь студентам ПММ ВГУ</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/projects/favicon-freshmanamm.png">
+    <link rel="stylesheet" href="css/project-styles.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="blue-bar"></div>
+    </div>
+    
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="../../index.html" class="back-link"><i class="fas fa-arrow-left"></i></a>
+                <span class="logo-text">FreshmanAMM</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about" class="nav-link">О проекте</a></li>
+                    <li><a href="#features" class="nav-link">Функции</a></li>
+                    <li><a href="#technology" class="nav-link">Технологии</a></li>
+                    <!-- <li><a href="#team" class="nav-link">Команда</a></li> -->
+                </ul>
+            </nav>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-project">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">FreshmanAMM</h1>
+                    <p class="hero-subtitle">Telegram-бот для студентов факультета ПММ ВГУ</p>
+                    <div class="hero-buttons">
+                        <a href="https://t.me/VSU_AMM_bot" class="btn btn-telegram" target="_blank">
+                            <i class="fab fa-telegram"></i> Открыть в Telegram
+                        </a>
+                        <a href="https://github.com/BugWarningVSU/VSU_AMM_bot" class="btn btn-outline" target="_blank">
+                            <i class="fab fa-github"></i> Исходный код
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="../../images/projects/freshmanamm-logo.png" alt="FreshmanAMM">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about-project">
+            <div class="container">
+                <h2 class="section-title">О проекте</h2>
+                <div class="about-content">
+                    <p class="about-text">FreshmanAMM - это Telegram-бот, созданный специально для студентов факультета прикладной математики и механики Воронежского государственного университета. Проект был разработан для упрощения адаптации первокурсников и предоставления быстрого доступа к учебной информации.</p>
+                    <div class="project-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-text">пользователей</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-text">функций</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-text">доступность</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section features">
+            <div class="container">
+                <h2 class="section-title">Основные функции</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Расписание</h3>
+                        <p class="feature-description">Автоматическое обновление расписания занятий для всех курсов</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3 class="feature-title">Учебные материалы</h3>
+                        <p class="feature-description">База данных с лекциями, методичками и полезными ресурсами</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h3 class="feature-title">FAQ</h3>
+                        <p class="feature-description">Ответы на часто задаваемые вопросы о факультете и университете</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="technology" class="section technology">
+            <div class="container">
+                <h2 class="section-title">Технологии</h2>
+                <div class="tech-content">
+                    <div class="tech-stack">
+                        <h3 class="tech-subtitle">Используемый стек технологий</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <img src="../../images/projects/tech/python.png" alt="Python" class="tech-logo">
+                                <span class="tech-name">Python</span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="../../images/projects/tech/telegram.png" alt="Telegram API" class="tech-logo">
+                                <span class="tech-name">Telegram API</span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="../../images/projects/tech/postgresql.png" alt="PostgreSQL" class="tech-logo">
+                                <span class="tech-name">PostgreSQL</span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="../../images/projects/tech/docker.png" alt="Docker" class="tech-logo">
+                                <span class="tech-name">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="tech-architecture">
+                        <h3 class="tech-subtitle">Архитектура проекта</h3>
+                        <img src="../images/projects/freshmanamm-architecture.png" alt="Архитектура FreshmanAMM" class="architecture-img">
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="team" class="section team">
+            <div class="container">
+                <h2 class="section-title">Команда проекта</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="../images/founders/founder1.jpg" alt="Андрей Никитцев">
+                        </div>
+                        <h3 class="member-name">Андрей Никитцев</h3>
+                        <p class="member-role">Разработчик</p>
+                        <div class="member-social">
+                            <a href="https://github.com/n3xxxt" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://t.me/n3xxxt" target="_blank"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="../images/founders/founder2.jpg" alt="Артем Мальцев">
+                        </div>
+                        <h3 class="member-name">Артем Мальцев</h3>
+                        <p class="member-role">Разработчик</p>
+                        <div class="member-social">
+                            <a href="https://github.com/ApTMaLt" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://t.me/ApTMaLt" target="_blank"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">FreshmanAMM</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">О проекте</a>
+                    <a href="#features">Функции</a>
+                    <a href="#technology">Технологии</a>
+                    <!-- <a href="#team">Команда</a> -->
+                </div>
+                <div class="footer-social">
+                    <a href="https://t.me/VSU_AMM_bot" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://github.com/BugWarningVSU/VSU_AMM_bot" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="footer-copy">
+                    &copy; 2025 BWlabs. Все права защищены.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Project-specific scripts
+        document.addEventListener('DOMContentLoaded', function() {
+            // Preloader
+            const preloader = document.querySelector('.preloader');
+            
+            window.addEventListener('load', function() {
+                preloader.style.opacity = '0';
+                preloader.style.visibility = 'hidden';
+                
+                setTimeout(function() {
+                    preloader.style.display = 'none';
+                }, 500);
+            });
+            
+            // Mobile Navigation
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav');
+            
+            burger.addEventListener('click', function() {
+                nav.classList.toggle('active');
+                burger.classList.toggle('toggle');
+            });
+            
+            // Smooth Scrolling for Navigation Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    if (this.classList.contains('nav-link')) {
+                        nav.classList.remove('active');
+                        burger.classList.remove('toggle');
+                    }
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Header Scroll Effect
+            const header = document.querySelector('.header');
+            
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // Animation for feature cards
+            const featureCards = document.querySelectorAll('.feature-card');
+            
+            function animateFeatures() {
+                featureCards.forEach((card, index) => {
+                    if (isElementInViewport(card) && !card.classList.contains('animated')) {
+                        card.classList.add('animated');
+                        card.style.animationDelay = `${index * 0.1}s`;
+                    }
+                });
+            }
+            
+            function isElementInViewport(el) {
+                const rect = el.getBoundingClientRect();
+                return (
+                    rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.bottom >= 0
+                );
+            }
+            
+            window.addEventListener('scroll', animateFeatures);
+            animateFeatures(); // Check on load
+        });
+    </script>
+</body>
+</html>
