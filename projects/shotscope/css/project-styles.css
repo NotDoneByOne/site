@@ -1,19 +1,18 @@
-/* FreshmanAMM Project Specific Styles */
+/* ShotSCOPE Project Specific Styles */
 :root {
-    --telegram-blue: #0088cc;
-    --telegram-light-blue: #5ac8fb;
-    --telegram-dark-blue: #006699;
-    --telegram-white: #ffffff;
-    --telegram-black: #212121;
-    --telegram-gray: #f8f9fa;
-    --telegram-dark-gray: #5e5e5e;
+    --teal-primary: rgb(82, 180, 191);
+    --teal-light: rgba(82, 180, 191, 0.8);
+    --teal-dark: rgb(62, 140, 150);
+    --white-primary: rgb(255, 255, 255);
+    --dark-primary: rgb(35, 34, 52);
+    --dark-secondary: rgb(50, 49, 70);
 }
 
 /* Preloader */
 .blue-bar {
     width: 100px;
     height: 4px;
-    background-color: var(--telegram-light-blue);
+    background-color: var(--teal-primary);
     position: relative;
     overflow: hidden;
 }
@@ -25,39 +24,39 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: var(--telegram-white);
+    background-color: var(--white-primary);
     animation: preloader 1.5s infinite;
 }
 
 /* Header */
 .header {
-    background-color: var(--telegram-blue);
+    background-color: var(--dark-primary);
     border-bottom: none;
 }
 
 .logo-text {
-    color: var(--telegram-white);
+    color: var(--white-primary);
 }
 
 .nav-link {
-    color: var(--telegram-white);
+    color: var(--white-primary);
 }
 
 .nav-link:hover {
-    color: var(--telegram-light-blue);
+    color: var(--teal-primary);
 }
 
 .nav-link::after {
-    background-color: var(--telegram-light-blue);
+    background-color: var(--teal-primary);
 }
 
 .burger div {
-    background-color: var(--telegram-white);
+    background-color: var(--white-primary);
 }
 
 /* Hero Project */
 .hero-project {
-    background: linear-gradient(135deg, var(--telegram-blue) 0%, var(--telegram-dark-blue) 100%);
+    background: linear-gradient(135deg, var(--dark-primary) 0%, var(--dark-secondary) 100%);
     height: auto;
     padding: 120px 0 80px;
 }
@@ -91,13 +90,13 @@
 }
 
 .hero-title {
-    color: var(--telegram-white);
+    color: var(--white-primary);
     font-size: 3rem;
     margin-bottom: 20px;
 }
 
 .hero-subtitle {
-    color: var(--telegram-light-blue);
+    color: var(--teal-primary);
     font-size: 1.5rem;
     margin-bottom: 30px;
 }
@@ -108,55 +107,55 @@
     gap: 15px;
 }
 
-.btn-telegram {
-    background-color: var(--telegram-white);
-    color: var(--telegram-blue);
-    border: 2px solid var(--telegram-white);
+.btn-teal {
+    background-color: var(--teal-primary);
+    color: var(--white-primary);
+    border: 2px solid var(--teal-primary);
 }
 
-.btn-telegram:hover {
-    background-color: transparent;
-    color: var(--telegram-white);
+.btn-teal:hover {
+    background-color: var(--teal-dark);
+    border-color: var(--teal-dark);
 }
 
 .btn-outline {
     background-color: transparent;
-    color: var(--telegram-white);
-    border: 2px solid var(--telegram-white);
+    color: var(--white-primary);
+    border: 2px solid var(--white-primary);
 }
 
 .btn-outline:hover {
-    background-color: var(--telegram-white);
-    color: var(--telegram-blue);
+    background-color: var(--white-primary);
+    color: var(--dark-primary);
 }
 
 .back-link {
-    color: var(--telegram-white);
+    color: var(--white-primary);
     margin-right: 15px;
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
 .back-link:hover {
-    color: var(--telegram-light-blue);
+    color: var(--teal-primary);
 }
 
 /* About Project */
 .about-project {
-    background-color: var(--telegram-gray);
-    color: var(--telegram-black);
+    background-color: var(--white-primary);
+    color: var(--dark-primary);
 }
 
 .section-title {
-    color: var(--telegram-blue);
+    color: var(--teal-primary);
 }
 
 .section-title::after {
-    background-color: var(--telegram-blue);
+    background-color: var(--teal-primary);
 }
 
 .about-text {
-    color: var(--telegram-dark-gray);
+    color: var(--dark-primary);
     margin-bottom: 40px;
 }
 
@@ -171,27 +170,29 @@
     text-align: center;
     margin: 15px;
     padding: 20px;
-    background-color: var(--telegram-white);
+    background-color: var(--dark-primary);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     min-width: 150px;
+    color: var(--white-primary);
 }
 
 .stat-number {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--telegram-blue);
+    color: var(--teal-primary);
     margin-bottom: 10px;
 }
 
 .stat-text {
-    color: var(--telegram-dark-gray);
+    color: var(--white-primary);
     font-size: 1rem;
 }
 
 /* Features */
 .features {
-    background-color: var(--telegram-white);
+    background-color: var(--dark-primary);
+    color: var(--white-primary);
 }
 
 .features-grid {
@@ -202,33 +203,34 @@
 }
 
 .feature-card {
-    background-color: var(--telegram-white);
+    background-color: var(--dark-secondary);
     border-radius: 10px;
     padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid rgba(0, 136, 204, 0.1);
+    border: 1px solid rgba(82, 180, 191, 0.2);
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-color: var(--teal-primary);
 }
 
 .feature-icon {
     font-size: 2.5rem;
-    color: var(--telegram-blue);
+    color: var(--teal-primary);
     margin-bottom: 20px;
 }
 
 .feature-title {
-    color: var(--telegram-blue);
+    color: var(--white-primary);
     margin-bottom: 15px;
     font-size: 1.3rem;
 }
 
 .feature-description {
-    color: var(--telegram-dark-gray);
+    color: rgba(255, 255, 255, 0.8);
     line-height: 1.6;
 }
 
@@ -240,13 +242,14 @@
     margin-top: 50px;
 }
 
-.tech-stack, .tech-architecture {
+.tech-stack,
+.tech-architecture {
     flex: 1;
     min-width: 300px;
 }
 
 .tech-subtitle {
-    color: var(--telegram-blue);
+    color: var(--teal-primary);
     margin-bottom: 30px;
     font-size: 1.5rem;
 }
@@ -261,7 +264,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--telegram-white);
+    background-color: var(--white-primary);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -280,7 +283,7 @@
 }
 
 .tech-name {
-    color: var(--telegram-blue);
+    color: var(--dark-primary);
     font-weight: 500;
 }
 
@@ -291,100 +294,33 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Team */
-.team {
-    background-color: var(--telegram-gray);
-}
-
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
-}
-
-.team-member {
-    background-color: var(--telegram-white);
-    border-radius: 10px;
-    padding: 30px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-}
-
-.team-member:hover {
-    transform: translateY(-5px);
-}
-
-.member-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 20px;
-    border: 3px solid var(--telegram-light-blue);
-}
-
-.member-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.member-name {
-    color: var(--telegram-blue);
-    margin-bottom: 5px;
-    font-size: 1.3rem;
-}
-
-.member-role {
-    color: var(--telegram-dark-gray);
-    margin-bottom: 15px;
-}
-
-.member-social {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.member-social a {
-    color: var(--telegram-blue);
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-}
-
-.member-social a:hover {
-    color: var(--telegram-dark-blue);
-}
-
 /* Footer */
 .footer {
-    background-color: var(--telegram-blue);
-    color: var(--telegram-white);
+    background-color: var(--dark-primary);
+    color: var(--white-primary);
 }
 
 .footer-logo .logo-text {
-    color: var(--telegram-white);
+    color: var(--white-primary);
 }
 
 .footer-links a {
-    color: var(--telegram-white);
+    color: var(--white-primary);
 }
 
 .footer-links a:hover {
-    color: var(--telegram-light-blue);
+    color: var(--teal-primary);
 }
 
 .footer-social a {
-    color: var(--telegram-white);
+    color: var(--white-primary);
     font-size: 1.2rem;
     margin-right: 15px;
     transition: color 0.3s ease;
 }
 
 .footer-social a:hover {
-    color: var(--telegram-light-blue);
+    color: var(--teal-primary);
 }
 
 .footer-copy {
@@ -393,9 +329,12 @@
 
 /* Animations */
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
@@ -412,20 +351,21 @@
         padding-right: 0;
         margin-bottom: 40px;
     }
-    
+
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.2rem;
     }
-    
+
     .tech-content {
         flex-direction: column;
     }
-    
-    .tech-stack, .tech-architecture {
+
+    .tech-stack,
+    .tech-architecture {
         width: 100%;
     }
 }
@@ -434,13 +374,17 @@
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
     }
-    
+
     .btn {
         width: 100%;
         text-align: center;
+    }
+
+    .stat-item {
+        min-width: 100%;
     }
 }
