@@ -388,3 +388,234 @@
         min-width: 100%;
     }
 }
+
+/* Стили для раздела скриншотов */
+.screenshots {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.screenshot-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.screenshot-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.screenshot-img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+    display: block;
+}
+
+.screenshot-caption {
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Стили для раздела команды */
+.team {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.team-member {
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.member-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    border: 5px solid #e1f5fe;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-name {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.member-role {
+    color: #0077b6;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.member-bio {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Дополнительные стили для улучшенного отображения */
+@media (max-width: 768px) {
+    .screenshots-grid, .team-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .screenshot-item, .team-member {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .team-member {
+        padding: 25px;
+    }
+}
+
+/* Анимации для плавного появления */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.screenshot-item, .team-member {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.screenshot-item:nth-child(1) { animation-delay: 0.1s; }
+.screenshot-item:nth-child(2) { animation-delay: 0.2s; }
+.screenshot-item:nth-child(3) { animation-delay: 0.3s; }
+.screenshot-item:nth-child(4) { animation-delay: 0.4s; }
+
+.team-member:nth-child(1) { animation-delay: 0.2s; }
+.team-member:nth-child(2) { animation-delay: 0.3s; }
+.team-member:nth-child(3) { animation-delay: 0.4s; }
+
+/* Стили для раздела лицензии */
+.license-section {
+    padding: 60px 0;
+    background-color: #f5f5f5;
+    border-top: 1px solid #e0e0e0;
+}
+
+.license-content {
+    max-width: 800px;
+    margin: 30px auto 0;
+    text-align: center;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.license-link {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #0077b6;
+    color: white;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.license-link:hover {
+    background-color: #005f92;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 119, 182, 0.3);
+}
+
+.license-link i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .license-content {
+        padding: 20px;
+    }
+    
+    .license-link {
+        padding: 10px 20px;
+    }
+}
+
+.legal-link {
+    display: inline-flex;
+    align-items: center;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.legal-link:hover {
+    color: #0077b6;
+}
+
+.legal-link i {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-links {
+        margin: 20px 0;
+    }
+    
+    .footer-legal {
+        margin-top: 30px;
+    }
+}
