@@ -59,6 +59,7 @@
     background: linear-gradient(135deg, var(--dark-primary) 0%, var(--dark-secondary) 100%);
     height: auto;
     padding: 120px 0 80px;
+    position: relative;
 }
 
 .hero-project .container {
@@ -478,7 +479,7 @@
 }
 
 .member-role {
-    color: #0077b6;
+    color: #3498DB;
     font-weight: 600;
     margin-bottom: 15px;
     font-size: 16px;
@@ -555,7 +556,7 @@
     align-items: center;
     margin-top: 20px;
     padding: 12px 25px;
-    background-color: #0077b6;
+    background-color: #3498DB;
     color: white;
     border-radius: 6px;
     font-weight: 500;
@@ -596,7 +597,7 @@
 }
 
 .legal-link:hover {
-    color: #0077b6;
+    color: #3498DB;
 }
 
 .legal-link i {
@@ -617,5 +618,52 @@
     
     .footer-legal {
         margin-top: 30px;
+    }
+}
+
+.project-badges {
+    top: 30px;
+    right: 30px;
+    display: flex;
+    gap: 12px;
+}
+
+.project-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    background: #da4453;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    line-height: 1;
+}
+
+.project-badge i {
+    margin-right: 6px;
+    font-size: 12px;
+}
+
+/* Цвета бейджей */
+.badge-type-closed { background: #da4453; }
+.badge-type-opensource { background: #8cc152; }
+.badge-status-development { background: #3498DB; }
+.badge-status-released { background: #8cc152; }
+.badge-status-planned { background: #f6bb42; }
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .project-badges {
+        top: 20px;
+        right: 20px;
+        flex-direction: column;
+    }
+    
+    .project-badge {
+        padding: 5px 10px;
+        font-size: 11px;
     }
 }
