@@ -492,3 +492,159 @@
         font-size: 11px;
     }
 }
+
+/* Support Section */
+.support {
+    background-color: var(--telegram-gray);
+}
+
+.support-card {
+    display: flex;
+    align-items: center;
+    background-color: var(--telegram-white);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    flex-wrap: wrap;
+}
+
+.support-logo {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+.support-logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+}
+
+.support-info {
+    flex: 2;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.support-info h3 {
+    color: var(--telegram-blue);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.support-info p {
+    color: var(--telegram-dark-gray);
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Version Section */
+.version {
+    background-color: var(--telegram-white);
+}
+
+.version-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.version-card {
+    background-color: var(--telegram-gray);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.version-number {
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    padding: 20px;
+}
+
+.version-number span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--telegram-blue);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.version-badge {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: var(--telegram-blue);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.version-details {
+    flex: 2;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.version-details h3 {
+    color: var(--telegram-blue);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.version-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.version-features li {
+    color: var(--telegram-dark-gray);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.version-features i {
+    color: var(--telegram-blue);
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+.version-date {
+    color: var(--telegram-dark-gray);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.version-date i {
+    margin-right: 8px;
+    color: var(--telegram-blue);
+}
+
+@media (max-width: 768px) {
+
+    .support-card,
+    .version-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .support-logo,
+    .support-info,
+    .version-number,
+    .version-details {
+        flex: none;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .version-features li {
+        justify-content: center;
+    }
+}
