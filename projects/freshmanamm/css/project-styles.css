@@ -648,3 +648,87 @@
         justify-content: center;
     }
 }
+
+/* Support Section - Mobile Fixes */
+@media (max-width: 768px) {
+    .support-card {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .support-logo,
+    .support-info {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .support-logo img {
+        max-height: 120px;
+    }
+
+    .support-info h3 {
+        font-size: 1.3rem;
+        margin-top: 15px;
+    }
+}
+
+/* Version Section - Mobile Fixes */
+@media (max-width: 768px) {
+    .version-card {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .version-number,
+    .version-details {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .version-number span {
+        font-size: 2rem;
+    }
+
+    .version-features {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .version-features li {
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .version-date {
+        justify-content: center;
+    }
+}
+
+/* Additional Mobile Optimizations */
+@media (max-width: 480px) {
+    .support-logo img {
+        max-height: 100px;
+    }
+
+    .version-number span {
+        font-size: 1.8rem;
+    }
+
+    .version-features {
+        padding-left: 10px;
+    }
+
+    .version-features li {
+        font-size: 0.9rem;
+    }
+
+    .support-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .support-info p {
+        font-size: 0.9rem;
+    }
+}
