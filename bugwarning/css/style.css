@@ -130,7 +130,7 @@ section {
     font-weight: 700;
     color: var(--white);
     position: relative;
-    transition: color 0.3s ease;
+    /* transition: color 0.3s ease; */
 }
 
 .logo-text:hover {
