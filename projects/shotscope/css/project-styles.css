@@ -105,18 +105,19 @@
 .hero-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 12px;
+    padding-top: 20px;
 }
 
 .btn-teal {
-    background-color: var(--teal-primary);
+    background-color: #2F80ED;
     color: var(--white-primary);
-    border: 2px solid var(--teal-primary);
+    border: 2px solid #2F80ED;
 }
 
 .btn-teal:hover {
-    background-color: var(--teal-dark);
-    border-color: var(--teal-dark);
+    background-color: #1a6ed8;
+    border-color: #1a6ed8;
 }
 
 .btn-outline {
@@ -667,3 +668,4 @@
         font-size: 11px;
     }
 }
+
