@@ -669,3 +669,132 @@
     }
 }
 
+/* Support Section */
+.support {
+    padding: 80px 0;
+    background: var(--dark-primary);
+    color: var(--white-primary);
+}
+
+
+
+.support-content {
+    flex: 2;
+    padding: 40px;
+}
+
+.support-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.support-img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+.support-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.support-reasons {
+    margin: 40px 0;
+}
+
+.reason-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.reason-icon {
+    font-size: 1.5rem;
+    color: var(--teal-primary);
+    margin-right: 15px;
+    min-width: 30px;
+    text-align: center;
+}
+
+.reason-content h3 {
+    color: var(--teal-primary);
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.reason-content p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.support-cta {
+    background-color: rgba(218, 68, 83, 0.15);
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 4px solid #da4453;
+}
+
+.urgent-text {
+    font-weight: 600;
+    color: #ff9ba9;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.donation-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.donation-note {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+    .support-card {
+        flex-direction: column;
+    }
+
+    .support-content,
+    .support-image {
+        padding: 30px;
+    }
+
+    .support-image {
+        order: -1;
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .support-content,
+    .support-image {
+        padding: 20px;
+    }
+
+    .donation-buttons {
+        flex-direction: column;
+    }
+
+    .donation-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
