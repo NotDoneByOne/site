@@ -3,60 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BWlab - Инновационные решения</title>
+    <title>NotDoneByOne | Цифровая синергия</title>
     
-    <!-- Open Graph метатеги для соцсетей и мессенджеров -->
-    <meta property="og:title" content="BWlab - Инновационные решения">
-    <meta property="og:description" content="Разработка передовых технологий и IT-решений для бизнеса">
-    <meta property="og:image" content="https://bugwarningvsu.github.io/BWlabs-demo/images/bwlab_logo_preview.png">
-    <meta property="og:url" content="https://bugwarningvsu.github.io/BWlabs-demo/index.html">
+    <!-- Open Graph метатеги -->
+    <meta property="og:title" content="NotDoneByOne | Цифровая синергия">
+    <meta property="og:description" content="Мы создаем цифровую экосистему, где идеи обретают форму через единение технологий и команды.">
+    <meta property="og:image" content="https://notdonebyone.ru/images/og-preview.png">
+    <meta property="og:url" content="https://notdonebyone.ru">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="BWlab">
-    
-    <!-- Twitter Card (опционально) -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="BWlab - Инновационные решения">
-    <meta name="twitter:description" content="Разработка передовых технологий и IT-решений для бизнеса">
-    <meta name="twitter:image" content="https://bugwarningvsu.github.io/BWlabs-demo/images/logo.jpg">
+    <meta property="og:site_name" content="NotDoneByOne">
     
     <!-- Основные стили и шрифты -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Более технологичные шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <link rel="icon" href="images/bwlab_logo_wout_back.png">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="icon" type="image/png" href="images/bwlab_logo_wout_back.png">
-    <link rel="apple-touch-icon" href="images/bwlab_logo_wout_back.png">
-
-    <!-- Manifest и цвет темы -->
-    <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#292929">
-
-    <!-- Дополнительные мета-теги -->
-    <meta name="description" content="Разработка IT-решений для бизнеса: веб-разработка, мобильные приложения, автоматизация процессов и консалтинг">
-    <meta name="keywords" content="IT решения, разработка ПО, веб-разработка, мобильные приложения, BWlab, digital-консалтинг">
 </head>
 <body>
+    <!-- Анимированный фон -->
+    <div id="particles-js"></div>
+    <div class="grid-overlay"></div>
+
     <div class="preloader">
-        <div class="red-bar"></div>
+        <div class="preloader-text">
+            <span class="ndo-logo">NDO</span>
+            <span class="loading-bar"><span class="progress"></span></span>
+            <span class="loading-text">Инициализация системы...</span>
+        </div>
     </div>
     
     <header class="header">
         <div class="container">
             <div class="logo-container">
-                <span class="logo-text">BWlab</span>
+                <span class="logo-text glitch" data-text="NotDoneByOne">NotDoneByOne</span>
             </div>
             <nav class="nav">
                 <ul>
-                    <li><a href="#about" class="nav-link">О нас</a></li>
-                    <li><a href="#founders" class="nav-link">Команда</a></li>
-                    <li><a href="#projects" class="nav-link">Проекты</a></li>
-                    <li><a href="bugwarning/index.html" class="nav-link">BugWarning</a></li>
-                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                    <li><a href="#about" class="nav-link"><span class="link-text">Миссия</span></a></li>
+                    <li><a href="#process" class="nav-link"><span class="link-text">Принципы</span></a></li>
+                    <li><a href="#founders" class="nav-link"><span class="link-text">Сеть</span></a></li>
+                    <li><a href="#projects" class="nav-link"><span class="link-text">Продукты</span></a></li>
+                    <li><a href="bugwarning/index.html" class="nav-link"><span class="link-text">BugWarning</span></a></li>
+                    <li><a href="#contact" class="nav-link"><span class="link-text">Коннект</span></a></li>
                 </ul>
             </nav>
             <div class="burger">
@@ -69,68 +60,104 @@
 
     <main>
         <section class="hero">
+            <canvas id="network-canvas"></canvas>
             <div class="container">
-                <h1 class="hero-title">Инновации в <span class="red-text">каждом</span> бите</h1>
-                <p class="hero-subtitle">Создаём будущее сегодня</p>
-                <a href="#projects" class="btn btn-red">Наши проекты</a>
+                <h1 class="hero-title">
+                    <span class="title-line">Цифровая</span>
+                    <span class="title-line">Синергия</span>
+                </h1>
+                <p class="hero-subtitle">Сила — в связях. Успех — в единстве.</p>
+                <a href="#projects" class="btn btn-holographic">
+                    <span>Исследовать Проекты</span>
+                    <div class="btn-shine"></div>
+                </a>
             </div>
             <div class="scroll-down">
-                <div class="mouse"></div>
-                <div class="arrow"></div>
+                <div class="cyber-arrow"></div>
             </div>
         </section>
 
         <section id="about" class="section about">
             <div class="container">
-                <h2 class="section-title">О BWlab</h2>
+                <h2 class="section-title">Наша <span class="accent-text">Миссия</span></h2>
                 <div class="about-content">
-                    <p class="about-text">BWlab - это команда разработчиков, создающих инновационные решения для цифрового мира. Мы сочетаем креативность с&nbsp;техническим мастерством, чтобы создавать продукты, которые имеют значение.</p>                    
+                    <div class="mission-statement">
+                        <p>Мы — <strong>NotDoneByOne</strong>. Мы верим, что сложнейшие технологические вызовы невозможно решить в одиночку</p>                        
+                        <p>Наша сила — в синергии, где уникальные навыки каждого участника сливаются в единый цифровой организм, способный создавать инновационные продукты.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="section process">
+            <div class="container">
+                <h2 class="section-title">Наши <span class="accent-text">Принципы</span></h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-icon">01</div>
+                        <h3>Концепция</h3>
+                        <p>Превращаем сырую идею в детальную архитектуру. Думаем наперед.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-icon">02</div>
+                        <h3>Синтез</h3>
+                        <p>Объединяем технологии и экспертизу в единый, работающий организм.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-icon">03</div>
+                        <h3>Эволюция</h3>
+                        <p>Постоянно тестируем, анализируем и улучшаем продукт. Ничто не совершенно.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="founders" class="section founders">
             <div class="container">
-                <h2 class="section-title">Наша команда</h2>
-                <div class="founders-grid">
-                    <!-- Основатель 1 -->
-                    <div class="founder-card">
-                        <div class="founder-img-container">
-                            <img src="images/founders/founder1.jpg" alt="1" class="founder-img">
-                            <div class="founder-overlay">
-                                <div class="founder-social">
-                                    <a href="https://github.com/n3xxxt"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <h3 class="founder-name">Андрей Никитцев</h3>
-                        <p class="founder-role">Founder/fullstack-разработчик</p>                        
+                <h2 class="section-title"><span class="accent-text">Ядра</span></h2>
+                <div class="network-container">
+                    <div class="network-connections">
+                        <!-- Линии соединения будут нарисованы JS -->
                     </div>
-                    
-                    <!-- Основатель 2 -->
-                    <div class="founder-card">
-                        <div class="founder-img-container">
-                            <img src="images/founders/founder2.jpg" alt="2" class="founder-img">
-                            <div class="founder-overlay">
-                                <div class="founder-social">
-                                    <a href="https://github.com/ApTMaLt"><i class="fab fa-github"></i></a>
+                    <div class="founders-grid">
+                        <div class="founder-card" data-id="1">
+                            <div class="founder-hexagon">
+                                <div class="hexagon-inner">
+                                    <img src="images/founders/founder1.jpg" alt="Андрей Никитцев" class="founder-img">
                                 </div>
                             </div>
-                        </div>
-                        <h3 class="founder-name">Артем Мальцев</h3>
-                        <p class="founder-role">Co-founder/backend-разработчик</p>
-                    </div>
-                    
-                    <div class="founder-card">
-                        <div class="founder-img-container">
-                            <img src="images/founders/founder3.jpg" alt="3" class="founder-img">
-                            <div class="founder-overlay">
-                                <div class="founder-social">
-                                    <a href="https://github.com/AleksandrLedenev"><i class="fab fa-github"></i></a>
-                                </div>
+                            <h3 class="founder-name">Андрей Никитцев</h3>
+                            <p class="founder-role">Architect & Fullstack</p>
+                            <div class="founder-links">
+                                <a href="https://github.com/n3xxxt"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
-                        <h3 class="founder-name">Александр Леденев</h3>
-                        <p class="founder-role">Co-founder/frontend-разработчик</p>
+                        
+                        <div class="founder-card" data-id="2">
+                            <div class="founder-hexagon">
+                                <div class="hexagon-inner">
+                                    <img src="images/founders/founder2.jpg" alt="Артем Мальцев" class="founder-img">
+                                </div>
+                            </div>
+                            <h3 class="founder-name">Артем Мальцев</h3>
+                            <p class="founder-role">System Core & Backend</p>
+                            <div class="founder-links">
+                                <a href="https://github.com/ApTMaLt"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="founder-card" data-id="3">
+                            <div class="founder-hexagon">
+                                <div class="hexagon-inner">
+                                    <img src="images/founders/founder3.jpg" alt="Александр Леденев" class="founder-img">
+                                </div>
+                            </div>
+                            <h3 class="founder-name">Александр Леденев</h3>
+                            <p class="founder-role">Interface Logic & Frontend</p>
+                            <div class="founder-links">
+                                <a href="https://github.com/AleksandrLedenev"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -138,62 +165,79 @@
 
         <section id="projects" class="section projects">
             <div class="container">
-                <h2 class="section-title">Наши проекты</h2>
+                <h2 class="section-title">Наша <span class="accent-text">Экосистема</span></h2>
                 <div class="projects-grid">
-                    <!-- Проект 1 -->
                     <div class="project-card">
-                        <div class="project-img-container">
-                            <img src="images/projects/project1.jpg" alt="Проект 1" class="project-img">						
-							<!-- <span class="project-type type-opensource">Open-Source</span> -->
-							<div class="project-status-icon status-icon-released" title="Релиз">R</div>
-							<div class="project-overlay">
-								<a href="projects/freshmanamm/index.html" class="btn btn-outline project-details" data-project-type="opensource">Подробнее</a>
-							</div>
+                        <div class="project-header">
+                            <h3 class="project-name">FreshmanAMM</h3>
+                            <div class="project-status open-source">OPEN</div>
                         </div>
-                        <h3 class="project-name">FreshmanAMM</h3>
-                        <p class="project-description">Telegram-BOT для помощи студентам факультета ПММ ВГУ.</p>
+                        <p class="project-description">Децентрализованный помощник для студентов, переосмысливающий образовательный опыт.</p>
                         <div class="project-tech">
                             <span>Python</span>
                             <span>PostgreSQL</span>
+                            <span>Telegram API</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="projects/freshmanamm/index.html" class="project-link">Исследовать код <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
-                    <!-- Проект 2 -->
                     <div class="project-card">
-                        <div class="project-img-container">
-                            <img src="images/projects/project2.png" alt="Проект 2" class="project-img">
-							<span class="project-type type-closed">Closed</span>
-							<div class="project-status-icon status-icon-released" title="1.0.0">R</div>
-                            <div class="project-overlay">
-								<a href="projects/shotscope/index.html" class="btn btn-outline project-details">Подробнее</a>
-							</div>
+                        <div class="project-header">
+                            <h3 class="project-name">ShotSCOPE</h3>
+                            <div class="project-status released">v1.0.0</div>
                         </div>
-                        <h3 class="project-name">ShotSCOPE</h3>
-                        <p class="project-description">Цифровая платформа для стрелкового спорта, помогающая спортсменам и&nbsp;тренерам анализировать результаты, планировать тренировки и&nbsp;отслеживать прогресс.</p>
+                        <p class="project-description">Высокоточная аналитическая платформа для стрелкового спорта. Компьютерное зрение и машинное обучение для анализа техники.</p>
                         <div class="project-tech">
                             <span>Flutter</span>
-                            <span>PostgreSQL</span>
                             <span>Java</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="projects/shotscope/index.html" class="project-link">Узнать больше <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
-                    
+
+                    <!-- <div class="project-card coming-soon">
+                        <div class="project-header">
+                            <h3 class="project-name">[REDACTED]</h3>
+                            <div class="project-status dev">DEV</div>
+                        </div>
+                        <p class="project-description">Новый проект в активной стадии разработки. Скорость. Безопасность. Масштаб.</p>
+                        <div class="project-tech">
+                            <span>Rust</span>
+                            <span>WebAssembly</span>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-link soon">Скоро...</span>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </section>
 
         <section id="contact" class="section contact">
             <div class="container">
-                <h2 class="section-title">Свяжитесь с&nbsp;нами</h2>
+                <h2 class="section-title">Установить <span class="accent-text">CONNECT</span></h2>
                 <div class="contact-content">
                     <div class="contact-info">
-                        <h3 class="contact-subtitle">Наши соцсети</h3>
-                        <div class="social-links">
-                            <a href="https://github.com/BugWarningVSU" class="social-link"><i class="fab fa-github"></i> GitHub</a>
-                            <a href="https://t.me/bugwarning" class="social-link"><i class="fab fa-telegram"></i> Telegram</a>
-                            <a href="https://vk.com/bugwarning" class="social-link"><i class="fab fa-vk"></i> VK</a>
+                        <p>Готовы создать что-то революционное вместе?</p>
+                        <div class="contact-links">
+                            <a href="https://github.com/NotDoneByOne" class="contact-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://t.me/notdonebyone" class="contact-link">
+                                <i class="fab fa-telegram"></i>
+                                <span>Telegram</span>
+                            </a>
+                            <a href="mailto:NotDoneByOne@internet.ru" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </a>
                         </div>
-                        <h3 class="contact-subtitle">Email</h3>
-                        <a href="mailto:BWlab@yandex.ru" class="email-link">BWlab@yandex.ru</a>
                     </div>
                 </div>
             </div>
@@ -204,36 +248,18 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="images/bwlab_logo_wout_back.png" alt="BWlab Logo" class="logo">
-                    <span class="logo-text">BWlab</span>
+                    <span class="logo-text">NDO</span>
+                    <span class="footer-tagline">Сила в связях</span>
                 </div>
-    
-                <div class="footer-links">
-                    <a href="#about">О нас</a>
-                    <a href="#founders">Команда</a>
-                    <a href="#projects">Проекты</a>
-                    <a href="bugwarning/index.html">BugWarning</a>
-                    <a href="#contact">Контакты</a>
+                <div class="footer-copy">
+                    &copy; 2025 NotDoneByOne. Все права защищены. | Сделано с <i class="fas fa-heart"></i> и кофеином.
                 </div>
-    
-                <div class="footer-support">
-                    <h4>Поддержите нашу команду</h4>
-                    <div class="qr-code-container">
-                        <a href="https://boosty.to/bwlab/donate" target="_blank" rel="noopener noreferrer" class="qr-link">
-                            <img src="images/boosty-qr.png" alt="QR-код для поддержки на Boosty" class="qr-code">
-                        </a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="footer-copy">
-                &copy; 2025 BWlab. Все права защищены.
             </div>
         </div>
     </footer>
 
+    <!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/main.js"></script>
-	
-</div>
 </body>
 </html>

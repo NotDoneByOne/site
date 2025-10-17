@@ -1,306 +1,356 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShotSCOPE - Платформа для стрелкового спорта</title>
-
-    <!-- Open Graph метатеги для соцсетей и мессенджеров -->
-    <meta property="og:title" content="ShotSCOPE - Платформа для стрелкового спорта">
-    <meta property="og:description" content="Инновационная система анализа стрельбы для спортсменов и тренеров">
-    <meta property="og:image" content="https://bugwarningvsu.github.io/BWlabs-demo/images/projects/shotscope-logo.png">
-    <meta property="og:url" content="https://bugwarningvsu.github.io/BWlabs-demo/projects/shotscope/index.html">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="ShotSCOPE">
-
-    <!-- Twitter Card (опционально) -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ShotSCOPE - Платформа для стрелкового спорта">
-    <meta name="twitter:description" content="Инновационная система анализа стрельбы для спортсменов и тренеров">
-    <meta name="twitter:image" content="https://bugwarningvsu.github.io/BWlabs-demo/images/projects/shotscope-logo.png">
-
-    <!-- Основные стили и шрифты -->
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/animations.css">
+    <title>ShotSCOPE - Инновационная платформа для стрелкового спорта</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/project-styles.css">
-
-    
-    <link rel="icon" href="../../images/bwlab_logo_wout_back.png">
-    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
-    <link rel="icon" type="image/png" href="../../images/bwlab_logo_wout_back.png">
-    <link rel="apple-touch-icon" href="../../images/bwlab_logo_wout_back.png">
-
-    <!-- Дополнительные мета-теги -->
-    <meta name="description" content="Профессиональная платформа для анализа техники стрельбы: статистика, тренировочные программы и советы для спортсменов">
-    <meta name="keywords" content="стрелковый спорт, анализ стрельбы, тренировки, спортивная статистика, ShotSCOPE, пулевая стрельба">
 </head>
-
 <body>
+    <!-- Preloader -->
     <div class="preloader">
-        <div class="blue-bar"></div>
+        <div class="preloader-content">
+            <div class="tech-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+            </div>
+            <div class="preloader-text">
+                <span class="logo-text">ShotSCOPE</span>
+                <p>Загрузка инновационной платформы...</p>
+            </div>
+        </div>
     </div>
 
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo-container">
-                <a href="../../index.html" class="back-link"><i class="fas fa-arrow-left"></i></a>
+                <div class="logo-pulse"></div>
                 <span class="logo-text">ShotSCOPE</span>
             </div>
             <nav class="nav">
                 <ul>
-                    <li><a href="#about" class="nav-link">О проекте</a></li>
-                    <li><a href="#features" class="nav-link">Функции</a></li>
-                    <li><a href="#screenshots" class="nav-link">Скриншоты</a></li>
+                    <li><a href="#about" class="nav-link">Технологии</a></li>
+                    <li><a href="#features" class="nav-link">Возможности</a></li>
+                    <!-- <li><a href="#screenshots" class="nav-link">Галерея</a></li> -->
                     <li><a href="#team" class="nav-link">Эксперты</a></li>
-                    <li><a href="#technology" class="nav-link">Технологии</a></li>
+                    <!-- <li><a href="#stats" class="nav-link">Результаты</a></li> -->
+                    <li><a href="#contact" class="nav-link">Демо</a></li>
                 </ul>
             </nav>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+            <div class="header-actions">            
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
             </div>
         </div>
     </header>
 
-    <main>
-        <section class="hero-project">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">ShotSCOPE</h1>
-                    <p class="hero-subtitle">Цифровая платформа<br>для стрелкового спорта</p>
-                      <div class="project-badges">
-                    <div class="project-badge badge-type-closed">
-                        <i class="fas fa-lock"></i>
-                        Закрытый проект
+        <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-element element-1"></div>
+                <div class="floating-element element-2"></div>
+                <div class="floating-element element-3"></div>
+                <div class="pulse-dot dot-1"></div>
+                <div class="pulse-dot dot-2"></div>
+                <div class="pulse-dot dot-3"></div>
+            </div>
+            <div class="hero-grid">
+                <div class="grid-line"></div>
+                <div class="grid-line"></div>
+                <div class="grid-line"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badges">
+                    <div class="hero-badge">
+                        <i class="fas fa-rocket"></i>
+                        <span>Инновационная платформа</span>
                     </div>
-                    <div class="project-badge badge-status-released">
-                        <i class="fas fa-code"></i>
-                        Версия 1.0.0
+                    <div class="hero-badge">
+                        <i class="fas fa-brain"></i>
+                        <span>AI Powered</span>
                     </div>
                 </div>
-                    
-                    <div class="hero-buttons">
-                        <a href="https://www.rustore.ru/catalog/app/com.bw.shot_scope" class="btn btn-teal" target="_blank">
-                            <i class="fas fa-download"></i> Скачать на RuStore
-                        </a>
-                    
-                    
+                
+                <h1 class="hero-title">
+                    <span class="title-line">ShotSCOPE</span>
+                    <span class="title-subline">Профессиональная аналитика</span>
+                    <span class="title-subline">для стрелкового спорта</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Передовая платформа с искусственным интеллектом для анализа стрельбы, 
+                    используемая ведущими спортсменами и&nbsp;тренерами
+                </p>
+
+                <div class="hero-actions">
+                    <a href="https://www.rustore.ru/catalog/app/com.bw.shot_scope" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-download"></i>
+                        <span>Скачать в RuStore</span>
+                        <div class="btn-glow"></div>
+                    </a>
                 </div>
-                    
-                    
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <div class="logo-display">
+                        <img src="images/logo.png" alt="ShotSCOPE" class="hero-logo">
+                    </div>
+                    <div class="visual-glow"></div>
                 </div>
-               
-                <div class="hero-image">
-                    <img src="../../images/projects/shotscope-logo.png" alt="ShotSCOPE">
-                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Мощный арсенал для чемпионов</h2>
+                <p class="section-subtitle">Комплексные решения для профессиональной подготовки</p>
             </div>
             
-           
-        </section>
-
-        <section id="about" class="section about-project">
-            <div class="container">
-                <h2 class="section-title">О проекте</h2>
-                <div class="about-content">
-                    <p class="about-text">ShotSCOPE - это инновационная платформа для стрелкового спорта, разработанная
-                        для помощи спортсменам и тренерам в анализе результатов, планировании тренировок и отслеживании
-                        прогресса. Проект создавался в тесном сотрудничестве с профессиональными стрелками и тренерами,
-                        что позволило создать действительно полезный и удобный инструмент для тренировочного процесса.</p>
-                    <div class="project-stats">
-                        <div class="stat-item">                        
-                            <div class="stat-number">Платформы</div>
-                            <div class="stat-text">iOS & Android</div>                  
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">AI</div>
-                            <div class="stat-text">аналитика</div>
-                        </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3 class="feature-title">Real-time коррекция</h3>
+                    <p class="feature-description">
+                        Мгновенные рекомендации по исправлению ошибок во время тренировки 
+                        на основе AI-анализа
+                    </p>
+                    <div class="feature-tech">
+                        <span class="tech-tag">WebRTC</span>
+                        <span class="tech-tag">AI Models</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-network-wired"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3 class="feature-title">Командная аналитика</h3>
+                    <p class="feature-description">
+                        Сравнительный анализ результатов всей команды с детализацией 
+                        по каждому спортсмену и упражнению
+                    </p>
+                    <div class="feature-tech">
+                        <span class="tech-tag">Big Data</span>
+                        <span class="tech-tag">Analytics</span>
+                    </div>
+                </div>                
+                <!-- <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-procedures"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3 class="feature-title">Биомеханический анализ</h3>
+                    <p class="feature-description">
+                        Оценка физиологических параметров и их влияния на результат 
+                        с рекомендациями по коррекции
+                    </p>
+                    <div class="feature-tech">
+                        <span class="tech-tag">Biometrics</span>
+                        <span class="tech-tag">ML Algorithms</span>
+                    </div>
+                </div> -->
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3 class="feature-title">Predictive модели</h3>
+                    <p class="feature-description">
+                        Прогнозирование результатов и выявление скрытых закономерностей 
+                        для оптимизации тренировок
+                    </p>
+                    <div class="feature-tech">
+                        <span class="tech-tag">Predictive AI</span>
+                        <span class="tech-tag">Data Science</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="features" class="section features">
-            <div class="container">
-                <h2 class="section-title">Основные функции</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h3 class="feature-title">Анализ результатов</h3>
-                        <p class="feature-description">Детальная статистика и&nbsp;визуализация результатов стрельбы с&nbsp;возможностью сравнения с&nbsp;предыдущими тренировками</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-calendar-check"></i>
-                        </div>
-                        <h3 class="feature-title">Планирование тренировок</h3>
-                        <p class="feature-description">Индивидуальный план тренировок с&nbsp;учетом целей и&nbsp;текущего уровня подготовки</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-bullseye"></i>
-                        </div>
-                        <h3 class="feature-title">Визуализация мишеней</h3>
-                        <p class="feature-description">Интерактивные модели мишеней с&nbsp;анализом попаданий</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h3 class="feature-title">Тренерский модуль</h3>
-                        <p class="feature-description">Инструменты для тренеров: управление группой спортсменов,
-                            сравнение результатов</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h3 class="feature-title">AI-аналитика</h3>
-                        <p class="feature-description">Искусственный интеллект выявляет закономерности и даёт
-                            рекомендации по улучшению</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-gun"></i>
-                        </div>
-                        <h3 class="feature-title">Учет оружия</h3>
-                        <p class="feature-description">Ведение базы оружия и&nbsp;анализ результатов с&nbsp;разными типами оружия</p>
-                    </div>
-                </div>
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Эксперты и разработчики</h2>
+                <p class="section-subtitle">Профессионалы, стоящие за инновационной платформой</p>
             </div>
-        </section>
-
-        <section id="screenshots" class="section screenshots">
-            <div class="container">
-                <h2 class="section-title">Скриншоты приложения</h2>
-                <div class="screenshots-grid">
-                    <div class="screenshot-item">
-                        <img src="../../images/projects/shotscope/screen1.jpg" alt="Профиль пользователя" class="screenshot-img">
-                        <p class="screenshot-caption">Профиль пользователя</p>
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="../../images/projects/shotscope/screen2.jpg" alt="Анализ мишени" class="screenshot-img">
-                        <p class="screenshot-caption">Детальный анализ попаданий</p>
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="../../images/projects/shotscope/screen3.jpg" alt="Управление оружием" class="screenshot-img">
-                        <p class="screenshot-caption">Раздел управления оружием</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="team" class="section team">
-            <div class="container">
-                <h2 class="section-title">Спортивные эксперты проекта</h2>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <div class="member-photo">
-                            <img src="../../images/projects/shotscope/member1.png" alt="Ордин Александр">
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="member-photo">
+                        <img src="images/member1.png" alt="Ордин Александр">
+                        <div class="photo-glow"></div>
+                        <div class="member-badge">
+                            <i class="fas fa-award"></i>
                         </div>
+                    </div>
+                    <div class="member-info">
                         <h3 class="member-name">Ордин Александр</h3>
                         <p class="member-role">Главный тренер сборной Воронежской области</p>
-                        <p class="member-bio">Мастер спорта международного класса</p>
-                        <p class="member-bio">Судья всероссийской категории</p>
-                    </div>
-                    <div class="team-member">
-                        <div class="member-photo">
-                            <img src="../../images/projects/shotscope/member2.jpg" alt="Ордина Наталия">
+                        <div class="member-credentials">
+                            <div class="credential">
+                                <i class="fas fa-star"></i>
+                                <span>Мастер спорта международного класса</span>
+                            </div>
+                            <div class="credential">
+                                <i class="fas fa-gavel"></i>
+                                <span>Судья всероссийской категории</span>
+                            </div>
+                            <div class="credential">
+                                <i class="fas fa-trophy"></i>
+                                <span>20+ лет coaching experience</span>
+                            </div>
                         </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="member-photo">
+                        <img src="images/member2.jpg" alt="Ордина Наталия">
+                        <div class="photo-glow"></div>
+                        <div class="member-badge">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                    </div>
+                    <div class="member-info">
                         <h3 class="member-name">Ордина Наталия</h3>
                         <p class="member-role">Мастер спорта Российской Федерации</p>
-                        <p class="member-bio">Чемпионка Европы</p>
-                        <p class="member-bio">Чемпионка России</p>
+                        <div class="member-credentials">
+                            <div class="credential">
+                                <i class="fas fa-crown"></i>
+                                <span>Чемпионка России и Европы</span>
+                            </div>
+                            <div class="credential">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Эксперт по технической подготовке</span>
+                            </div>
+                            <div class="credential">
+                                <i class="fas fa-flask"></i>
+                                <span>Sports scientist</span>
+                            </div>
+                        </div>
                     </div>
-                    
                 </div>
-            </div>
-        </section>
-        
-
-        <section id="technology" class="section technology">
-            <div class="container">
-                <h2 class="section-title">Технологии</h2>
-                <div class="tech-content">
-                    <div class="tech-stack">
-                        <h3 class="tech-subtitle">Используемый стек технологий</h3>
-                        <div class="tech-items">
-                            <div class="tech-item">
-                                <a href="https://flutter.dev/" target="_blank" class="tech-item">
-                                    <img src="../../images/projects/tech/flutter.png" alt="Flutter" class="tech-logo">
-                                    <span class="tech-name">Flutter</span>
-                                </a>
+                
+                <div class="team-card">
+                    <div class="member-photo tech-photo">
+                        <div class="tech-avatar">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="photo-glow"></div>
+                        <div class="member-badge">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Команда NotDoneByOne</h3>
+                        <p class="member-role">Технологические партнеры</p>
+                        <div class="member-credentials">
+                            <div class="credential">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Full-stack разработчики</span>
                             </div>
-                            <div class="tech-item">
-                                <a href="https://www.java.com/ru/" target="_blank" class="tech-item">
-                                    <img src="../../images/projects/tech/java.png" alt="Java" class="tech-logo">
-                                    <span class="tech-name">Java</span>
-                                </a>
+                            <div class="credential">
+                                <i class="fas fa-robot"></i>
+                                <span>Data Science engineers</span>
                             </div>
-                            <div class="tech-item">
-                                <a href="https://www.postgrespro.ru/" target="_blank" class="tech-item">
-                                    <img src="../../images/projects/tech/postgresql.png" alt="PostgreSQL" class="tech-logo">
-                                    <span class="tech-name">PostgreSQL</span>
-                                </a>
+                            <div class="credential">
+                                <i class="fas fa-server"></i>
+                                <span>DevOps специалисты</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2 class="cta-title">Готовы к новому уровню тренировок?</h2>
+                    <p class="cta-description">
+                        Присоединяйтесь к сообществу профессиональных спортсменов, 
+                        которые уже используют ShotSCOPE для достижения выдающихся результатов
+                    </p>
+                </div>
+                <div class="cta-actions">
+                    <a href="https://www.rustore.ru/catalog/app/com.bw.shot_scope" class="btn btn-primary btn-large" target="_blank">
+                        <i class="fas fa-rocket"></i>
+                        <span>Начать использовать</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="logo-text">ShotSCOPE</span>
-                </div>
-    
-                <div class="footer-links">
-                    <a href="#about">О проекте</a>
-                    <a href="#features">Функции</a>
-                    <a href="#screenshots">Скриншоты</a>
-                    <a href="#team">Эксперты</a>
-                    <a href="#technology">Технологии</a>
-                </div>
-    
-                <!-- QR-код для поддержки в футере -->
-                <div class="footer-support">
-                    <h4>Поддержите проект</h4>
-                    <div class="qr-code-container">
-                        <a href="https://boosty.to/bwlab/donate" target="_blank" rel="noopener noreferrer" class="qr-link">
-                            <img src="files/support-qr-code.png" alt="QR-код для поддержки на Boosty" class="qr-code">
-                            <p>Нажмите для поддержки</p>
+                <div class="footer-brand">
+                    <div class="logo-container">
+                        <img src="images/logo.png" alt="ShotSCOPE" class="logo-img">
+                        <span class="logo-text">ShotSCOPE</span>
+                    </div>
+                    <p class="footer-description">
+                        Инновационная платформа для стрелкового спорта с искусственным интеллектом
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://t.me/notdonebyone" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://vk.com/notdonebyone" class="social-link">
+                            <i class="fab fa-vk"></i>
                         </a>
                     </div>
                 </div>
             </div>
-    
-            <div class="footer-legal">
-                <a href="files/license.pdf" class="legal-link" target="_blank">
-                    <i class="fas fa-file-contract"></i> Лицензионное соглашение ShotSCOPE
-                </a>
-            </div>
-    
-            <div class="footer-copy">
-                &copy; 2025 BWlab. Все права защищены.
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="files/license.pdf" class="legal-link" target="_blank">
+                        <i class="fas fa-shield-alt"></i>
+                        Лицензионное соглашение
+                    </a>
+                </div>
+                
+                <div class="footer-copy">
+                    <p>&copy; 2025 NotDoneByOne. Все права защищены</p>
+                    <p class="tech-stack">
+                        Built with <i class="fas fa-heart"></i> using Flutter, TensorFlow & Spring Boot
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
 
-    
-    <script src="js/project-scripts.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
