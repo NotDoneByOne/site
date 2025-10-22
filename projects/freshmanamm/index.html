@@ -20,33 +20,42 @@
     <meta name="twitter:image" content="https://bugwarningvsu.github.io/BWlabs-demo/images/projects/project1.jpg">
 
     <!-- Стили и шрифты -->
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/animations.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/project-styles.css">
-
-    
-    <link rel="icon" href="../../images/bwlab_logo_wout_back.png">
-    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
-    <link rel="icon" type="image/png" href="../../images/bwlab_logo_wout_back.png">
-    <link rel="apple-touch-icon" href="../../images/bwlab_logo_wout_back.png">
 
     <!-- Дополнительные метатеги -->
     <meta name="description" content="Учебные материалы, лекции и практические руководства для студентов факультета Прикладной математики и механики ВГУ">
     <meta name="keywords" content="ПММ ВГУ, математика, механика, учебные материалы, лекции, студенческий портал, FreshmanAMM">
 </head>
 <body>
+    <!-- Анимированный фон -->
+    <div class="animated-background">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+
+    <!-- Прелоадер -->
     <div class="preloader">
-        <div class="blue-bar"></div>
+        <div class="preloader-content">
+            <div class="loader-circle">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-text">Загрузка FreshmanAMM</div>
+        </div>
     </div>
     
+    <!-- Хедер -->
     <header class="header">
         <div class="container">
-            <div class="logo-container">
-                <a href="../../index.html" class="back-link"><i class="fas fa-arrow-left"></i></a>
+            <div class="logo-container">            
                 <span class="logo-text">FreshmanAMM</span>
             </div>
             <nav class="nav">
@@ -54,10 +63,9 @@
                     <li><a href="#about" class="nav-link">О проекте</a></li>
                     <li><a href="#features" class="nav-link">Функции</a></li>
                     <li><a href="#technology" class="nav-link">Технологии</a></li>
+                    <li><a href="#stats" class="nav-link">Статистика</a></li>
                     <li><a href="#support" class="nav-link">Поддержка</a></li>
                     <li><a href="#version" class="nav-link">Версия</a></li>
-                    
-                    <!-- <li><a href="#team" class="nav-link">Команда</a></li> -->
                 </ul>
             </nav>
             <div class="burger">
@@ -68,150 +76,378 @@
         </div>
     </header>
 
+    <!-- Основной контент -->
     <main>
+        <!-- Герой-секция -->
         <section class="hero-project">
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="hero-title">FreshmanAMM</h1>
-                    <p class="hero-subtitle">Telegram-бот для студентов факультета ПММ ВГУ</p>
+                    <div class="hero-badge">
+                        <span>Telegram Bot</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-word">Freshman</span>
+                        <span class="title-word accent">AMM</span>
+                    </h1>
+                    <p class="hero-subtitle">Помощник для студентов факультета ПММ ВГУ</p>
                     <div class="hero-buttons">
                         <a href="https://t.me/VSU_AMM_bot" class="btn btn-telegram" target="_blank">
-                            <i class="fab fa-telegram"></i> Открыть в&nbsp;Telegram
+                            <i class="fab fa-telegram"></i> Открыть в Telegram
                         </a>
-                        <!-- <a href="https://github.com/BugWarningVSU/VSU_AMM_bot" class="btn btn-outline" target="_blank">
-                            <i class="fab fa-github"></i> Исходный код
-                        </a> -->
                     </div>
-                    <!-- <div class="project-badge badge-type-opensource">
-                        <i class="fas fa-unlock"></i>
-                        Открытый исходный код
-                    </div> -->
-                    <div class="project-badge badge-status-released">
-                        <i class="fas fa-code"></i>
-                        Работает на факультете ПММ ВГУ
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="../../images/projects/freshmanamm-logo.png" alt="FreshmanAMM">
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="section about-project">
-            <div class="container">
-                <h2 class="section-title">О проекте</h2>
-                <div class="about-content">
-                    <p class="about-text">FreshmanAMM - это Telegram-бот, созданный специально для студентов факультета прикладной математики и&nbsp;механики Воронежского государственного университета. Проект был разработан для упрощения адаптации первокурсников и&nbsp;предоставления быстрого доступа к учебной информации.</p>
-                    <div class="project-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">100+</div>
-                            <div class="stat-text">пользователей</div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number" data-count="150">0</div>
+                            <div class="stat-text">активных пользователей</div>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">20+</div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="20">0</div>
                             <div class="stat-text">функций</div>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">24/7</div>
-                            <div class="stat-text">доступность</div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="24">0</div>
+                            <div class="stat-text">часа доступности</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="bot-interface">
+                        <div class="bot-header">
+                            <div class="bot-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="bot-info">
+                                <div class="bot-name">FreshmanAMM Bot</div>
+                                <div class="bot-status">онлайн</div>
+                            </div>
+                        </div>
+                        <div class="bot-messages">
+                            <div class="message bot-message">
+                                <div class="message-content">
+                                    Привет! Я помогу тебе с&nbsp;учебой на ПММ
+                                </div>
+                            </div>
+                            <div class="message user-message">
+                                <div class="message-content">
+                                    Покажи расписание на&nbsp;завтра
+                                </div>
+                            </div>
+                            <div class="message bot-message">
+                                <div class="message-content">
+                                    <div class="schedule-card">
+                                        <div class="schedule-day">Понедельник</div>
+                                        <div class="schedule-item">
+                                            <span class="time">9:00-10:30</span>
+                                            <span class="subject">Математический анализ</span>
+                                        </div>
+                                        <div class="schedule-item">
+                                            <span class="time">11:00-12:30</span>
+                                            <span class="subject">Программирование</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bot-input">
+                            <input type="text" placeholder="Введите сообщение...">
+                            <button class="send-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- О проекте -->
+        <section id="about" class="section about-project">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-number">01</span>
+                    О проекте
+                </h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>FreshmanAMM - это Telegram-бот, созданный специально для студентов факультета прикладной математики и&nbsp;механики Воронежского государственного университета.</p>
+                        <p>Проект разработан для упрощения адаптации первокурсников и&nbsp;предоставления быстрого доступа к&nbsp;учебной информации в&nbsp;любое время суток.</p>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature-highlight">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3>Мгновенная реакция</h3>
+                            <p>Ответы на запросы в&nbsp;режиме реального времени</p>
+                        </div>
+                        <div class="feature-highlight">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Надежность</h3>
+                            <p>Стабильная работа 24/7 с&nbsp;резервным копированием</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Функции -->
         <section id="features" class="section features">
             <div class="container">
-                <h2 class="section-title">Основные функции</h2>
+                <h2 class="section-title">
+                    <span class="title-number">02</span>
+                    Основные функции
+                </h2>
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-calendar-alt"></i>
+                        <div class="feature-header">
+                            <div class="feature-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="feature-badge">Обновлено</div>
                         </div>
-                        <h3 class="feature-title">Расписание</h3>
-                        <p class="feature-description">Автоматическое обновление расписания занятий для всех курсов</p>
+                        <h3 class="feature-title">Расписание занятий</h3>
+                        <p class="feature-description">Автоматическое обновление расписания для всех курсов с&nbsp;уведомлениями об изменениях</p>
+                        <div class="feature-details">
+                            <ul>
+                                <li>Поточные и групповые расписания</li>
+                                <li>Уведомления об изменениях</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-book"></i>
+                        <div class="feature-header">
+                            <div class="feature-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="feature-badge">Расширено</div>
                         </div>
                         <h3 class="feature-title">Учебные материалы</h3>
-                        <p class="feature-description">База данных с&nbsp;лекциями, методичками и&nbsp;полезными ресурсами</p>
+                        <p class="feature-description">Централизованная база лекций, методичек и&nbsp;дополнительных ресурсов</p>
+                        <div class="feature-details">
+                            <ul>
+                                <li>Поиск по предметам и темам</li>
+                                <li>Персональные рекомендации</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-question-circle"></i>
+                        <div class="feature-header">
+                            <div class="feature-icon">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <div class="feature-badge">Новое</div>
                         </div>
-                        <h3 class="feature-title">FAQ</h3>
-                        <p class="feature-description">Ответы на часто задаваемые вопросы о&nbsp;факультете и&nbsp;университете</p>
+                        <h3 class="feature-title">Умный FAQ</h3>
+                        <p class="feature-description">Система ответов на вопросы о&nbsp;факультете и&nbsp;университете</p>
+                        <div class="feature-details">
+                            <ul>
+                                <li>Контекстные подсказки</li>
+                                <li>Многовариантные ответы</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Технологии -->
         <section id="technology" class="section technology">
             <div class="container">
-                <h2 class="section-title">Технологии</h2>
+                <h2 class="section-title">
+                    <span class="title-number">03</span>
+                    Технологии
+                </h2>
                 <div class="tech-content">
                     <div class="tech-stack">
-                        <h3 class="tech-subtitle">Используемый стек технологий</h3>
+                        <h3 class="tech-subtitle">Стек технологий</h3>
                         <div class="tech-items">
-                            <a href="https://www.python.org/" target="_blank" class="tech-item">
-                                <img src="../../images/projects/tech/python.png" alt="Python" class="tech-logo">
-                                <span class="tech-name">Python</span>
-                            </a>
-                            <a href="https://core.telegram.org/bots/api" target="_blank" class="tech-item">
-                                <img src="../../images/projects/tech/telegram.png" alt="Telegram API" class="tech-logo">
-                                <span class="tech-name">Telegram API</span>
-                            </a>
-                            <a href="https://www.postgrespro.ru/" target="_blank" class="tech-item">
-                                <img src="../../images/projects/tech/postgresql.png" alt="PostgreSQL" class="tech-logo">
-                                <span class="tech-name">PostgreSQL</span>
-                            </a>
-                            <a href="https://www.docker.com/" target="_blank" class="tech-item">
-                                <img src="../../images/projects/tech/docker.png" alt="Docker" class="tech-logo">
-                                <span class="tech-name">Docker</span>
-                            </a>
+                            <div class="tech-item">
+                                <div class="tech-logo">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="tech-info">
+                                    <h4>Python</h4>
+                                    <p>Основной язык разработки бота</p>
+                                    <div class="tech-progress">
+                                        <div class="progress-bar" data-width="90"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-logo">
+                                    <i class="fab fa-telegram"></i>
+                                </div>
+                                <div class="tech-info">
+                                    <h4>Telegram API</h4>
+                                    <p>Интеграция с мессенджером</p>
+                                    <div class="tech-progress">
+                                        <div class="progress-bar" data-width="85"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-logo">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="tech-info">
+                                    <h4>PostgreSQL</h4>
+                                    <p>Надежное хранение данных</p>
+                                    <div class="tech-progress">
+                                        <div class="progress-bar" data-width="80"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-logo">
+                                    <i class="fab fa-docker"></i>
+                                </div>
+                                <div class="tech-info">
+                                    <h4>Docker</h4>
+                                    <p>Контейнеризация приложения</p>
+                                    <div class="tech-progress">
+                                        <div class="progress-bar" data-width="75"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+        </section>
+
+        <!-- Статистика -->
+        <section id="stats" class="section stats">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-number">04</span>
+                    Статистика использования
+                </h2>
+                <div class="stats-content">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-data">
+                                <div class="stat-value" data-count="150">0</div>
+                                <div class="stat-label">Активных пользователей</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="stat-data">
+                                <div class="stat-value" data-count="2500">0</div>
+                                <div class="stat-label">Сообщений в день</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-data">
+                                <div class="stat-value" data-count="99">0</div>
+                                <div class="stat-label">% доступности</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="stat-data">
+                                <div class="stat-value" data-count="15">0</div>
+                                <div class="stat-label">Обновлений</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-chart">
+                        <div class="chart-container">
+                            <canvas id="usageChart"></canvas>
                         </div>
                     </div>
                 </div>
             </div>
-            </section>
+        </section>
 
+        <!-- Поддержка -->
         <section id="support" class="section support">
             <div class="container">
-                <h2 class="section-title">Поддержка проекта</h2>
+                <h2 class="section-title">
+                    <span class="title-number">05</span>
+                    Поддержка проекта
+                </h2>
                 <div class="support-content">
                     <div class="support-card">
                         <div class="support-logo">
-                            <img src="../../images/projects/amm-logo.png" alt="Факультет ПММ ВГУ">
+                            <div class="logo-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
                         </div>
                         <div class="support-info">
-                            <h3>Официальная поддержка факультета</h3>
+                            <h3>Официальная поддержка факультета ПММ ВГУ</h3>
                             <p>Проект FreshmanAMM разработан при поддержке и&nbsp;содействии факультета прикладной математики и&nbsp;механики Воронежского государственного университета.</p>
                             <p>Бот является официальным инструментом для студентов и&nbsp;рекомендован деканатом к&nbsp;использованию.</p>
+                            <div class="support-features">
+                                <div class="support-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Одобрено учебным отделом</span>
+                                </div>
+                                <div class="support-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Интеграция с&nbsp;официальным расписанием</span>
+                                </div>
+                                <div class="support-feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Техническая поддержка от&nbsp;разработчиков</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
+        <!-- Версия -->
         <section id="version" class="section version">
             <div class="container">
-                <h2 class="section-title">Версия проекта</h2>
+                <h2 class="section-title">
+                    <span class="title-number">06</span>
+                    Версия проекта
+                </h2>
                 <div class="version-content">
                     <div class="version-card">
-                        <div class="version-number">
-                            <span>v2.6.11</span>
-                            <div class="version-badge">Актуальная</div>
+                        <div class="version-header">
+                            <div class="version-number">
+                                <span>v2.6.11</span>
+                                <div class="version-badge">Актуальная</div>
+                            </div>
+                            <div class="version-date">
+                                <i class="far fa-calendar-alt"></i> 31.10.2024
+                            </div>
                         </div>
                         <div class="version-details">
                             <h3>Текущая версия</h3>
-                            <ul class="version-features">
-                                <!-- <li><i class="fas fa-check-circle"></i> </li> -->                                
-                            </ul>
-                            <div class="version-date">
-                                <i class="far fa-calendar-alt"></i> Последнее обновление: 31.10.2024
+                            <div class="version-features">
+                                <div class="version-feature">
+                                    <div class="feature-marker new"></div>
+                                    <div class="feature-text">
+                                        <strong>Новая функция:</strong> Умный поиск по&nbsp;учебным материалам
+                                    </div>
+                                </div>
+                                <div class="version-feature">
+                                    <div class="feature-marker improved"></div>
+                                    <div class="feature-text">
+                                        <strong>Улучшено:</strong> Алгоритм парсинга расписания
+                                    </div>
+                                </div>
+                                <div class="version-feature">
+                                    <div class="feature-marker fixed"></div>
+                                    <div class="feature-text">
+                                        <strong>Исправлено:</strong> Ошибка кэширования данных
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -220,105 +456,50 @@
         </section>
     </main>
 
+    <!-- Футер -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="logo-text">FreshmanAMM</span>
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <span class="logo-text">FreshmanAMM</span>
+                        <p>Помощник для студентов ПММ ВГУ</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="link-group">
+                            <h4>Проект</h4>
+                            <a href="#about">О&nbsp;проекте</a>
+                            <a href="#features">Функции</a>
+                            <a href="#technology">Технологии</a>
+                        </div>
+                        <div class="link-group">
+                            <h4>Поддержка</h4>
+                            <a href="#support">Официальная поддержка</a>
+                            <a href="#version">Версии</a>
+                        </div>
+                        <div class="link-group">
+                            <h4>Контакты</h4>
+                            <a href="https://t.me/VSU_AMM_bot" target="_blank">Telegram бот</a>
+                            <a href="mailto:notdonebyone@internet.ru">Техподдержка</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <a href="#about" class="nav-link">О проекте</a>
-                    <a href="#features" class="nav-link">Функции</a>
-                    <a href="#technology" class="nav-link">Технологии</a>
-                    <a href="#support" class="nav-link">Поддержка</a>
-                    <a href="#version" class="nav-link">Версия</a>
-                </div>
-                <div class="footer-social">
-                    <a href="https://t.me/VSU_AMM_bot" target="_blank"><i class="fab fa-telegram"></i></a>
-                    <!-- <a href="https://github.com/BugWarningVSU/VSU_AMM_bot" target="_blank"><i class="fab fa-github"></i></a> -->
-                </div>
-                <div class="footer-copy">
-                    &copy; 2025 BWlab. Все права защищены.
+                <div class="footer-bottom">
+                    <div class="footer-copy">
+                        &copy; 2025 FreshmanAMM. Все права защищены.
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://t.me/VSU_AMM_bot" target="_blank">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    
-    <script>
-        // Project-specific scripts
-        document.addEventListener('DOMContentLoaded', function() {
-            // Preloader
-            const preloader = document.querySelector('.preloader');
-            
-            window.addEventListener('load', function() {
-                preloader.style.opacity = '0';
-                preloader.style.visibility = 'hidden';
-                
-                setTimeout(function() {
-                    preloader.style.display = 'none';
-                }, 500);
-            });
-            
-            // Mobile Navigation
-            const burger = document.querySelector('.burger');
-            const nav = document.querySelector('.nav');
-            
-            burger.addEventListener('click', function() {
-                nav.classList.toggle('active');
-                burger.classList.toggle('toggle');
-            });
-            
-            // Smooth Scrolling for Navigation Links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    if (this.classList.contains('nav-link')) {
-                        nav.classList.remove('active');
-                        burger.classList.remove('toggle');
-                    }
-                    
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-            
-            // Header Scroll Effect
-            const header = document.querySelector('.header');
-            
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 100) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-            });
-            
-            // Animation for feature cards
-            const featureCards = document.querySelectorAll('.feature-card');
-            
-            function animateFeatures() {
-                featureCards.forEach((card, index) => {
-                    if (isElementInViewport(card) && !card.classList.contains('animated')) {
-                        card.classList.add('animated');
-                        card.style.animationDelay = `${index * 0.1}s`;
-                    }
-                });
-            }
-            
-            function isElementInViewport(el) {
-                const rect = el.getBoundingClientRect();
-                return (
-                    rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-                    rect.bottom >= 0
-                );
-            }
-            
-            window.addEventListener('scroll', animateFeatures);
-            animateFeatures();
-        });
-    </script>
+    <!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
